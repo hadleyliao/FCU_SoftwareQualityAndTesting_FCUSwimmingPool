@@ -145,7 +145,7 @@ public class PricingCalculatorTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/test-data.csv", numLinesToSkip = 0) // 引用外部CSV檔案讀取測試資料
+    @CsvFileSource(resources = "/test-data.csv", numLinesToSkip = 1) // 引用外部CSV檔案讀取測試資料, 跳過第一行解說訊息
     @DisplayName("使用 CsvFileSource 測試多組輸入")
     void testWithCsvFileSource(boolean isWeekend, boolean isMember, boolean isGroup, int age, boolean isEarly, int expectedPrice) {
         assertEquals(expectedPrice, calculator.calculatePrice(isWeekend, isMember, isGroup, age, isEarly));
