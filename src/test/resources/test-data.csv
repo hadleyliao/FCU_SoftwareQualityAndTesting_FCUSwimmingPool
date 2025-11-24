@@ -1,4 +1,4 @@
-# 測試資料：isWeekend, isMember, isGroup, age, isEarly, expectedPrice
+測試資料：isWeekend, isMember, isGroup, age, isEarly, expectedPrice
 false,false,false,30,false,200
 false,true,false,30,false,100
 false,false,true,30,false,140
